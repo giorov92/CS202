@@ -1,0 +1,71 @@
+/* version name and root for variables... */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* nav ul{
+    list-style-type: none;
+}
+
+nav ul li{
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+}
+
+nav a{
+    text-decoration: none;
+    text-emphasis: center;
+    display: block;
+    padding: 10px;
+    background-color: #ffffff;
+}
+
+nav a:hover{
+    color: #ffffff;
+    background: #007d6f;
+} */
+nav{
+    background-color: #05a081;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+}
+
+/* keeps same width for elements */
+nav ul li{
+    flex: 1 1 0;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+}
+
+nav ul li a{
+    text-emphasis: center;
+    display: block;
+    padding: 10px;
+
+}
+
+nav a:hover{
+    color: #ffffff;
+    background: #00707d65;
+    text-decoration: none;
+}
+
+nav ul li ul{
+    position: absolute;
+    background-color: #05a081;
+    flex-direction: column;
+    widows: 100%;
+    margin: 0;
+    display: none;
+}
+
+nav ul li:hover ul{
+    display: block;

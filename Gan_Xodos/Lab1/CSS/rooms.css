@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,700');
+
+.rooms-pic-1{ 
+    max-width: 30.18%; 
+    display: inline-block; 
+    position: relative; 
+    overflow: hidden; 
+    padding: 0 1em; 
+}
+
+.rooms-pic-1 figure{
+    float: left;
+}
+
+.rooms-body{
+    background-color: white !important;
+    padding: 30px;
+    border: 1px solid #e6e6e6;
+    border-top: none;
+}
+
+/* how am I supposed to write this out? configure the figure .img parent child selector? */
+figure .img{
+    max-width: 100%;
+    height: auto;
+}

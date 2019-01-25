@@ -1,0 +1,41 @@
+/* slector and declaration */
+/* selector { propername:value;} */
+
+@import url('https://fonts.googleapis.com/css?family=Coiny');
+
+/* CSS variables - root and var() - color fonts sitewide! */
+:root{
+    --main-color:pink;
+    --text-color:chocolate;
+}
+
+p{
+    color: blue;
+
+}
+
+body{
+
+    /* font-style: italic;
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: 13px;
+    LINE-height: 150%;
+    font-family: Arial, Helvetica, sans-serif;  */
+
+    /* shorthand - make sure adapt with google font info below what you had to copy up above on google fonts*/
+    /* font:italic small-caps bold 13px/150% Nunito; */
+    
+    background-color:var(--main-color) !important;
+    
+}
+
+
+h4{
+
+    font-family:Georgia, 'Times New Roman', Times, serif !important;
+}
+
+p{
+    color:var(--text-color);
+}

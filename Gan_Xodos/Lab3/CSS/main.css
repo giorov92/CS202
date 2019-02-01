@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,700');
+
+:root{
+    --white-color: #ffffff;
+    --display-style: inline-block;
+    --main-color: #697e83;
+    --bg-color: #F8F9FA !important;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F4F4F4;
+    margin: 0px;
+    padding: 0px;
+    /* font-family:20px/1.5 'Nunito', sans-serif !important; */
+    font: 20px/1.5 'Nunito', sans-serif !important;
+}
+
+header{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 5;
+
+}
+
+header .logo{
+    text-transform: uppercase;
+    letter-spacing: .2em; 
+    font-weight: 700; 
+    color: white;
+    text-shadow: 0px 0px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
+}
+
+header div.logo{
+    float: left;
+    padding: 1em 3.5em 1em 0.5em;
+}
+
+header nav{
+    background: transparent !important;
+}
+
+img{ 
+    content: ""; 
+    background: rgba(0, 0, 0, 0.5); 
+    width: 100%; 
+    z-index: 1; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0 
+} 
+
+
+
+nav ul{
+    margin:0;
+    padding:0;
+    display:flex;
+    justify-content: space-around;
+    text-align:center;
+}
+
+nav li{
+    list-style: none;
+    padding:1em 0;
+    
+}
+
+nav a{
+    display: var(--display-style);
+    color: var(--white-color);
+    font-weight: 300;
+    opacity:0.6;
+    
+    text-decoration: none;
+    transition:0.3s all ease;
+    text-shadow: 0px 0px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
+}
+
+nav a:hover{
+    color: var(--white-color);
+    font-weight: 300;
+    opacity:1;
+    text-decoration: none;
+    transition:0.3s all ease;
+    text-shadow: 0px 0px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1); 
+}
+
+a{
+    transition: .3 all ease;
+    -webkit-transition: .3 all ease;
+    -o-transition: .3 all ease;
+    text-decoration: none;
+    
+}
+
+.heroimage{
+    background-image: url("../images/home.jpg"); 
+    background-size: cover;
+    height: 100vh;
+    background-color: transparent;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.heroimage:before{ 
+    content: ""; 
+    background: rgba(0, 0, 0, 0.5); 
+    width: 100%; 
+    height: 100vh; 
+    z-index: 1; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+}
+
+.heroitems{
+    color: var(--white-color);
+    position: relative;
+    width:100%;
+    min-height:550px;
+    height:100vh;
+    text-align: center !important;
+    display: table-cell;
+    vertical-align: middle;
+    margin:auto;
+    z-index: 2;
+    padding: 0 5em;
+}
+
+.heroitems > h1{
+    font-size: 3em;
+    color: var(--white-color);
+}
+
+.heroitems > p{
+    font-size: 1.4em;
+    color: var(--white-color);
+}
+
+
+.main-padding{
+    padding: 7em 0em;
+}
+
+.sideleft{
+    width: 30%;
+    float: left;
+    text-align: center;
+    height: auto;
+}
+
+.sub-heading{
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #CCCCCC;
+    letter-spacing: .1em;
+}
+
+.heading{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+/* just in case, since guide said button element... also in class .button */
+button{
+    margin-top:0 !important;
+}
+
+.button{
+    margin-top:0 !important;
+    background-color: var(--main-color);
+    transition: .3s all ease; 
+    padding: 12px 30px; 
+    margin-top: 1em; 
+    text-transform: uppercase; 
+    letter-spacing: .15em; 
+    color: #fff; 
+    border: none; 
+    cursor: pointer;
+}
+
+.button :hover{
+    color: var(--main-color);
+    background-color: var(--white-color);
+    border: 2px solid var(--main-color);
+}
+
+.label{
+    font-size:26px;
+    line-height:70px;
+    display:none;
+    width:30px;
+    float:right;
+    color:var(--white-color)
+}
+
+#toggle{
+    display:none;
+}
+
+.sideright{
+    width: 60%;
+    float: right;
+    height: auto;
+}
+
+.bg-color{
+    background-color: var(--bg-color);
+    display: flex;
+}
+
+.bg-color-helper-index{
+    padding-bottom: 0;
+}
+
+.bg-color-helper-standard{
+    padding-bottom: 5%;
+}
+
+.feature{
+    text-align: center;
+}
+.feature-image{
+    position: relative;
+}
+
+.feature-image img{
+    display: var(--display-style);
+    width: 300px;
+    margin: 1em;
+}
+
+.newsletter{
+    padding: 2em; 
+    color:white;
+    background-color: #35424a;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+    width:100%;
+}
+
+.newsletter h1{
+    float: left;
+     display: flex;
+}
+
+.newsletter form{
+    float:right;
+    margin: 10px;
+}
+
+.newsletter input[type="email"]{ 
+    padding: 12px 30px; 
+    height:2.7em; 
+    width:250px; 
+}
+
+.footer{
+    float: left;
+    width: 33%;
+    align: center;
+    margin-bottom: 4em;
+}
+
+.main-footer{
+    padding: 4em 0em 0.9em 0em;
+    background-color: #F2f2f2;
+    text-align: center
+}
+
+.copyright{
+    text-align: center;
+}
+
+/* unsolved attempt to center feature images when width is below 1200px */
+@media(max-width:1200){
+
+.feature-image{
+   
+}
+
+.centerimage{
+    position: relative;          /* where the next element will be automatically positioned */
+    display: inline-block;       /* causes element width to shrink to fit content */
+    left: 50%;                   /* moves left side of image/element to center of parent element */
+    transform: translate(-50%);
+}
+}
+
+@media(max-width:992px){
+
+.label{
+    display:block;
+    cursor:pointer;
+}
+
+
+nav ul{
+    text-align:center;
+    display:none;
+    flex-direction: column;
+    padding-top: 2.2em;
+    background-color: transparent;
+    align-items: center;
+}
+
+nav li{
+    width:100%;
+    text-align:center;
+    flex:auto;
+    background-color:rgba(0, 0, 0, 0.8);
+    position: relative;
+    top:1em;
+    display:inline-block;
+}
+
+nav a{
+    opacity:1;
+}
+
+#toggle:checked+.menu{
+    display:block;
+}
+
+header>div .logo{
+    float:left;
+    padding:1em 0.5em 0.5em 0.5em;
+}
+
+.menu a{
+    display:block;
+    margin:0;
+}
+
+.heroitems{
+    height: 100vh;
+}
+
+.heroitems h1{
+    font-size: 40px;
+}
+
+.sideleft, .sideright, .newsletter h1, .newsletter form, .footer, .feature-image img, .newsletter input[type="email"], button, .contactform, .button, textarea, .rooms-pic-1{
+    float:none;
+    width:100%;
+    text-align:center;
+    margin: 0.8em 0 0.8em 0;
+} 
+
+.rooms-pic-1{
+    max-width: 100%;
+}
+
+.sideleft{
+    padding-bottom: 1em;
+}
+
+.main-padding{
+    padding:2em 0;
+}
+
+.heroitems p{
+    font-size: 25px;
+    margin-bottom:20px;
+}
+
+.footer{
+    margin-bottom: 1em;
+}
+
+button{
+    margin-top:1em !important;
+}
+
+}
+
+@media(max-width:480px){
+
+.heroitems h1{
+    font-size: 30px;
+}
+
+.heroitems p{
+    font-size: 20px;
+}
+
+}

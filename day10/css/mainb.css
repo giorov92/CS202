@@ -24,6 +24,17 @@ body{
     font-family: 'Raleway';
     font-size: 20px !important;
 }
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100vh 600px 50vh 80px;
+    grid-template-areas:
+    "banner banner banner"
+    "main main main"
+    "section section section"
+    "footer footer footer"
+    
+}
 
 header{
     width: 100%;
@@ -32,23 +43,30 @@ header{
     top:0px;
     left:0px;
     right:0px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 200px;
+    grid-template-areas: 
+    "nav nav"
 }
 header nav{
     background: transparent !important;
 }
 nav{
-    text-align: center;
-    padding: 0;
-    margin: auto;
+    /* text-align: center; */
+    padding: 0;/* 
+    margin: auto; */
+    grid-area: nav;
 }
 nav a{
-    padding: 1em;
+    padding: 2em 0px;
     display: block;
     color: var(--text-color);
-    text-align: center;
+    text-align: left;
     text-decoration: none;
     opacity: 0.8.;
     transition: all 0.3s;
+    background-color: #2c6e00;
 }
 a:hover{
 text-decoration: none !important;
@@ -57,18 +75,17 @@ color: var(--text-color);
 nav ul{
     text-align:center;
     list-style-type: none;
-    display: flex;
     padding: 0;
     margin:0;
 }
 nav ul li{
-flex:auto;
 }
 .banner{
     background-image: url(../images/banner.jpg);
     background-size: cover;
     width: 100%;
     height: 100vh;
+    grid-area: banner;
 }
 
 .box{
@@ -111,7 +128,7 @@ flex:auto;
 .grid-2{
     display:grid;
     grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 100px 100px 100px 50px;
+    grid-template-rows:  100px 100px 50px;
     grid-template-areas: 
     "head head head"
     "nav main section"
@@ -120,38 +137,40 @@ flex:auto;
 
 }
 
-.header{
+header{
     grid-area:head;
 }
 
 .nav{
     grid-area:nav;
 }
-.section{
+section{
     grid-area:section;
 }
-.main{
+main{
     grid-area:main;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
 }
-.footer{
+footer{
     grid-area:footer;
 }
 
 .main-color{
-    display: flex;
+   /*  display: flex; */
 }
 .floatleft{
-    flex:1;
     padding: 1em;
 }
 .floatright{
-    flex:2;
     padding: 1em;
 }
 .box-flex{
-    display:flex;
+    /* display:flex; */
     padding:1em;
     text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
 }
 .box{
     text-align: center;

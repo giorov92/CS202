@@ -5,9 +5,10 @@
     --display-style: inline-block;
 }
 
-.container-gallery:{
+.container-gallery{
     display:grid;
-    grid-template-columns: repeat(auto-fill, mnmax(250, 1fr));
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(auto-fill, minmax(250, 1fr));
     justify-items: center;
     grid-gap: 20px;
     margin: 0.2em 2em 0.2em 2em;

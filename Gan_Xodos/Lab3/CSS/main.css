@@ -130,6 +130,7 @@ a{
 
 .heroitems{
     color: var(--white-color);
+    width: 100%;
     position: relative;
     width:100%;
     min-height:550px;

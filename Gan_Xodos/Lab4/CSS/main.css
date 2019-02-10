@@ -232,7 +232,7 @@ button{
 }
 
 .button{
-    display: inline-block;
+    /* display: inline-block; */
     text-align: center !important;
     margin-top:0 !important;
     background-color: var(--main-color);

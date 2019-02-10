@@ -1,0 +1,737 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,600,700');
+
+:root{
+    --white-color: #ffffff;
+    --display-style: inline-block;
+    --main-color: #697e83;
+    --bg-color: #F4F4F4;
+    --bg-color-alt1: #F8F9FA;
+    --bgcolor-alt2: #35424a;
+    --bgcolor-alt3: #F2F2F2;
+    
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--bg-color-alt1);
+    margin: 0px;
+    padding: 0px;
+    /* font-family:20px/1.5 'Nunito', sans-serif !important; */
+    font: 20px/1.5 'Nunito', sans-serif !important;
+}
+
+header{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 5;
+
+}
+
+header .logo{
+    text-transform: uppercase;
+    letter-spacing: .2em; 
+    font-weight: 700; 
+    color: white;
+    text-shadow: 0px 0px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
+}
+
+header div.logo{
+    float: left;
+    padding: 1em 3.5em 1em 0.5em;
+}
+
+header nav{
+    background: transparent !important;
+}
+
+img{ 
+    content: ""; 
+    background: rgba(0, 0, 0, 0.5); 
+    width: 100%; 
+    z-index: 1; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0 
+} 
+
+nav ul{
+    margin:0;
+    padding:0;
+    display:flex;
+    justify-content: space-around;
+    text-align:center;
+}
+
+nav li{
+    list-style: none;
+    padding:1em 0;
+    font-weight: bold !important;
+}
+
+nav a{
+    display: var(--display-style);
+    color: var(--white-color);
+    font-weight: 400 !important;
+    opacity:0.6;
+    text-decoration: none;
+    transition: all 0.3s  ease;
+    text-shadow: 0px 0px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
+}
+
+nav a:hover{
+    color: var(--white-color);
+    font-weight: 300;
+    opacity:1;
+    text-decoration: none;
+    transition:all 0.3s ease;
+    text-shadow: 0px 0px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1); 
+}
+
+a{
+    transition: all .3 ease;
+    -webkit-transition: all .3 ease;
+    -o-transition: all .3 ease;
+    text-decoration: none;
+    -webkit-text-decoration-skip: objects;
+}
+
+/* index - Stay and Enjoy */
+
+.enjoy{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-column-gap: 5vw;
+    text-align: center;
+    place-items: center;
+}
+
+.enjoy .info{
+    margin:0% 12% 1.375em 12%;
+}
+
+.enjoy .info p{
+    margin-bottom:1em;
+}
+
+/* About and Contact */
+
+.about{
+    display:block;
+    margin-bottom: 3em;
+}
+
+.contact{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 5em;
+}
+
+.contact p, h2{
+    text-align: center;
+}
+
+.contactform{
+    margin: 0;
+    padding-bottom: 2em;
+}
+
+.contactform input[type="text"], .contactform input[type="email"], .contactform textarea{
+    display:block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: var(--white-color);
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+}
+
+/* End About and Contact */
+
+.heroimage{
+    background-image: url("../images/home.jpg"); 
+    background-size: cover;
+    height: 100vh;
+    background-color: transparent;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.heroimage:before{ 
+    content: ""; 
+    background: rgba(0, 0, 0, 0.5); 
+    width: 100%; 
+    height: 100vh; 
+    z-index: 1; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+}
+
+.heroitems{
+    color: var(--white-color);
+    width: 100%;
+    position: relative;
+    width:1200px;
+    min-height:550px;
+    height:100vh;
+    text-align: center !important;
+    display: table-cell;
+    vertical-align: middle;
+    margin:auto;
+    z-index: 2;
+    padding: 0 5em;
+}
+
+.heroitems > h1{
+    font-size: 3em;
+    color: var(--white-color);
+}
+
+.heroitems > p{
+    font-size: 1.4em;
+    color: var(--white-color);
+}
+
+
+.main-padding{
+    padding: 7em 0em;
+}
+
+.sub-heading{
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #CCCCCC;
+    letter-spacing: .1em;
+    text-shadow: 2px 2px 4px #ffffff;
+}
+
+.heading{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+/* just in case, since guide said button element... also in class .button */
+button{
+    margin-top:0 !important;
+}
+
+.button{
+    display: inline-block;
+    text-align: center !important;
+    margin-top:0 !important;
+    background-color: var(--main-color);
+    transition: all .3s ease; 
+    padding: 12px 30px; 
+    /* margin-top: 1em;  */
+    text-transform: uppercase; 
+    letter-spacing: .15em; 
+    color: #fff; 
+    border: none; 
+    cursor: pointer;
+}
+
+.button:hover{
+    color: var(--main-color);
+    background-color: var(--white-color);
+    border: 2px solid var(--main-color);
+}
+
+.label{
+    font-size:26px;
+    line-height:70px;
+    display:none;
+    width:30px;
+    float:right;
+    color:var(--white-color)
+}
+
+#toggle{
+    display:none;
+}
+
+
+
+.bg-color{
+    background-color: var(--bg-color);
+    /* display: flex; */
+    overflow: hidden;
+}
+
+.bg-color-helper-index{
+    padding-bottom: 0;
+}
+
+.bg-color-helper-standard{
+    padding-bottom: 5%;
+}
+
+
+.block{
+    display: block;
+}
+
+/* feature gallery area */
+
+.feature{
+    text-align: center;
+}
+.feature-image{
+    display:grid;
+    /* grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(auto-fill, minmax(300, 1fr));
+    place-items: center;
+    row-gap: 3em;
+    column-gap: 3em;
+    overflow: hidden; */
+    grid-gap: 3em;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    place-items: center;
+}
+
+.feature-image img{
+    display: var(--display-style);
+    width: 300px;
+}
+
+@media(max-width:1200px){
+    
+    /* .feature-image{
+        margin-bottom:2em;
+    } */
+}
+
+/* newsletter */
+.newsletter{
+    padding: 2em; 
+    color:white;
+    background-color: var(--bgcolor-alt2);
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-areas: ". .  news-txt news-txt news-txt news-txt news-txt news-txt . news-form news-form news-form news-form news-form . .";
+    width:100%;
+}
+
+.news-txt{
+    grid-area: news-txt;
+}
+
+.news-form{
+    grid-area: news-form;
+}
+
+.newsletter div{
+    display: table;
+}
+.newsletter h1{
+    display:table-cell; 
+    vertical-align:middle;
+    text-align: center;
+}
+
+.newsletter form{
+    display:table-cell; 
+    vertical-align:middle;
+    text-align: center;
+    align-content: center;
+    margin: 2em;
+}
+
+.newsletter input[type="email"]{ 
+    padding: 12px 30px; 
+    height:2.7em; 
+    width:250px; 
+}
+
+.newsletter .button{
+    display: inline-block;
+}
+
+@media(max-width:1528px){
+    .newsletter h1, .newsletter form, .newsletter input[type="email"], button, .button, textarea{
+        float:none;
+        width:100% !important;
+        text-align:center;
+        margin: 0.8em 0 0.8em 0;
+    } 
+    }
+
+@media(max-width:1350px){
+.newsletter h1, .newsletter form, .newsletter input[type="email"], button, .button, textarea, .rooms-pic-1{
+    float:none;
+    width:100% !important;
+    text-align:center;
+    margin: 0.8em 0 0.8em 0;
+} 
+}
+
+@media(max-width:696px){
+    .newsletter{   
+        grid-template-columns: repeat(16, 1fr);
+        grid-template-areas: ". news-txt news-txt news-txt news-txt news-txt news-txt . . news-form news-form news-form news-form news-form news-form .";
+    }
+}
+
+@media(max-width:555px){
+    .newsletter{
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+            ". news-txt news-txt news-txt news-txt news-txt ."
+            ". news-form news-form news-form news-form news-form .";
+    }
+}
+
+@media(max-width:380px){
+    .newsletter{
+        display:block;
+        text-align: center;
+    }
+}
+
+/* footer */
+
+.footer{
+    float: left;
+    width: 33%;
+    text-align: center;
+    margin-bottom: 4em;
+}
+
+.main-footer{
+    padding: 4em 0em 0.9em 0em;
+    background-color: var(--bgcolor-alt3);
+    text-align: center
+}
+
+.copyright{
+    text-align: center;
+}
+
+/* end footer */
+
+@media(max-width:992px){
+
+.label{
+    display:block;
+    cursor:pointer;
+}
+
+
+nav ul{
+    text-align:center;
+    display:none;
+    flex-direction: column;
+    padding-top: 2.2em;
+    background-color: transparent;
+    align-items: center;
+}
+
+nav li{
+    width:100%;
+    text-align:center;
+    flex:auto;
+    background-color:rgba(0, 0, 0, 0.8);
+    position: relative;
+    top:1em;
+    display:inline-block;
+}
+
+nav a{
+    opacity:1;
+}
+
+#toggle:checked+.menu{
+    display:block;
+}
+
+header>div .logo{
+    float:left;
+    padding:1em 0.5em 0.5em 0.5em;
+}
+
+.menu a{
+    display:block;
+    margin:0;
+}
+
+.heroitems{
+    height: 100vh;
+}
+
+.heroitems h1{
+    font-size: 40px;
+}
+
+.newsletter h1, .newsletter form, .footer,  .newsletter input[type="email"], button, .button, textarea, .rooms-pic-1{
+    float:none;
+    width:100% !important;
+    text-align:center;
+    margin: 0.8em 0 0.8em 0;
+} 
+
+.rooms-pic-1{
+    max-width: 100%;
+}
+
+.main-padding{
+    padding:1.4em 0em;
+}
+
+.heroitems p{
+    font-size: 25px;
+    margin-bottom:20px;
+}
+
+.footer{
+    margin-bottom: 1em;
+}
+
+.main-footer{
+    padding:40px;
+}
+
+.copyright{
+    padding-top:1em;
+}
+
+button{
+    margin-top:1em !important;
+    margin-bottom:1em !important;
+}
+
+.enjoy{
+    display:block;
+}
+}
+
+@media(max-width:696px){
+
+.enjoy{
+    display: block !important;
+}
+}
+
+@media(max-width:480px){
+
+.heroitems h1{
+    font-size: 30px;
+}
+
+.heroitems p{
+    font-size: 20px;
+}
+
+}
+
+/* Gallery */
+
+.container-gallery{
+    
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(auto-fill, minmax(250, 1fr));
+    justify-items: center;
+    grid-gap: 20px;
+    /* margin: 0.2em 2em 0.2em 2em; */
+}
+
+.item{
+    width: 330px;
+    display: var(--display-style);
+    margin: 1rem;
+    position: relative;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.item>img{
+    width: 100%;
+    height: 100%;
+}
+
+.item>img:hover{
+    filter: blur(2px) brightness(60%);
+    box-shadow:0 8px 16px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+    cursor: pointer;
+}
+
+@media(max-width: 992px){
+    .pagination{
+        width: 50%;
+        margin:auto;
+        display: flex;
+        flex-direction:row;
+        padding-left: 0;
+        list-style: none;
+        border-radius: .25rem;
+    }
+    .page-item{
+        background-color: inherit;
+        top: 0;
+    }
+    
+ }
+
+ @media(max-width:1212px){
+    
+    .container{
+        margin:0;
+        padding: 0;
+        width: 100%;
+  height: 100%;
+    }
+    .container-gallery{
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0;
+        margin: 0;
+        width: 100%;
+  height: 100%;
+        
+    }
+    .main-padding{
+        padding: 2em 0em;
+        /* margin: 2em; */
+        width: 100%;
+        height: 100%;
+    }
+   
+    
+
+    body {
+        padding:0;
+        margin:0;
+        width: 100%;
+        height: 100%;
+      }
+ }
+
+ @media(max-width: 800px){
+
+    .container-gallery{
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 0;
+        margin-right: 0;
+    }
+ }
+
+@media(max-width: 480px){
+    .page-link{
+        font-size: small;
+    }
+ }
+
+ @media(max-width: 380px){
+    html, body {
+        width: 100%;
+        height: auto;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden; 
+    }
+ }
+
+ /* Rooms - Reservation forms*/
+
+.rooms{
+    display: grid;
+    grid-gap: 2em;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    place-items: center;
+
+}
+
+.rooms-pic-1{ 
+    /* max-width: 30.18%; 
+    display: inline-block; 
+    position: relative;  */
+    overflow: hidden; 
+    padding: 0 1em; 
+}
+
+/* .rooms-pic-1 figure{
+    float: left;
+} */
+
+.rooms-body{
+    background-color: white !important;
+    padding: 30px;
+    border: 1px solid #e6e6e6;
+    border-top: none;
+    text-align: left;
+}
+
+.rooms-body h3{
+    height: 2em;    
+    display: table-cell;
+    vertical-align: middle;
+    /* -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto; */
+}
+
+.rooms-body button{
+    text-align:center !important;
+}
+
+figure{
+    margin:0 !important;
+    padding: 0;
+}
+/* how am I supposed to write this out? configure the figure .img parent child selector? */
+figure img{
+    max-width: 100%;
+    height: auto;
+}
+
+.form-group label{
+    
+    vertical-align: bottom !important;
+    
+    margin-bottom: 1.5em;
+    text-align: bottom !important;
+}
+
+label{height:2em;}
+
+.control-label{
+    /* hyphens: auto; */
+    height: 3em;  
+    display: table-cell;  
+    text-align: bottom !important;
+    vertical-align: bottom !important;
+}
+
+@media(max-width:1200px){
+
+    /* .rooms-pic-1{
+        margin-bottom:2em;
+    } */
+}
+
+@media(max-width:992px){
+
+    .label{
+        display:block;
+        cursor:pointer;
+        height: 1em !important;
+    }
+}
+

@@ -2,7 +2,7 @@ body{
     margin:0;
     padding:0;
 }
-/* a Z-index will allow for forms to show up in front of particles */
+/* a Z-index will allow for forms to show up in front of particles ... see lab 6 */
 #particles-js{
     width:100%;
     height:100vh;

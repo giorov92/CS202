@@ -1,0 +1,125 @@
+/* Author - Justice Banson */
+/* Stylesheet for lesson5 */
+@import 'https://fonts.googleapis.com/css?family=Raleway';
+:root{
+    --main-color:#05a081;
+    --text-color:#fff;
+    --bg-1:#eee;
+    --bg-2:#333;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    padding: 0;
+    font-family: 'Raleway';
+    font-size: 20px !important;
+}
+#wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);/* 1fr 1fr 1fr; */
+    grid-template-rows: repeat(auto-fill); /* auto auto auto auto auto; */
+    grid-template-areas:
+    "header header header"
+    "banner banner banner"
+    "main main main"
+    "boxes boxes boxes"
+    "footer footer footer"
+}
+header{
+    width: 100%;
+    position:absolute; /*fixed;*/
+    z-index: 5;
+    grid-area: header;
+}
+header nav{
+    background: transparent !important;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+}
+nav ul li{
+    flex:1;
+}
+nav a{
+    text-decoration: none;
+    color:var(--text-color);
+    display: block;
+    padding:1em;
+    text-align: center;
+    opacity: 0.8;/* New */ 
+    transition: all 0.3s;/* New */ 
+}
+nav a:hover{
+    opacity: 1;/* New */ 
+    color: var( --main-color);/* New */ 
+}
+a:hover{
+    text-decoration: none !important;
+    color: var(--text-color);
+}
+.banner{
+    background-image: url(../images/banner.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    grid-area: banner;
+}
+main{
+    padding: 4em 0;
+    background-color: var(--background-color);
+    grid-area: main;
+}
+.main-container{
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+}
+
+.floatleft{
+      
+    padding:1em;
+}
+.floatright{
+       
+    padding:1em;
+}
+.box-container{
+   display: grid;
+   grid-template-columns:repeat(3, 1fr); /* 1fr 1fr 1fr;  */
+}
+.box{
+    text-align: center;
+    padding: 2em 0;
+    margin: 1em;
+}
+section{
+    color:var(--text-color);
+    background-color: var(--bg-2);
+    overflow: hidden;
+    grid-area: boxes;
+}
+.fas{
+    font-size: 3em;
+    padding: 0.5em;
+}
+.button{
+    background-color: var(--main-color);
+    color:var(--text-color);
+    padding: 0.5em 1em;
+    border-radius: 4px;   
+}
+
+footer{
+    width: 100%;
+    padding: 2.6em;
+    text-align: center;
+    grid-area: footer;
+}
+.label, #toggle{
+    display: none;
+}
+
+/* Media Queries For 760px */
